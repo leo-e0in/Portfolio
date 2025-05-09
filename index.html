@@ -1,52 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>leo.e0in</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous"></script>
-    <style>
-        body {
-            font-family: 'Trebuchet MS', 'Verdana', sans-serif;
-            background-color: #1F1F1F; 
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        h1, h2, h3 {
-            text-align: center;
-            color: #fff; /* Optional: Makes headings stand out against dark background */
-        }
-        p {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 10px;
-            color: #ccc; /* Optional: Lightens text for better readability */
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            color: #888;
-        }
-        hr {
-            border: none;
-            border-top: 1px solid #444;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leo | Portfolio</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      background-size: cover;
+      color: white;
+      font-family: sans-serif;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin: 20px 0;
+      max-width: 800px;
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin: 20px 0;
+      max-width: 800px;
+    }
+
+    hr {
+      width: 50%;
+      border: 1px solid white;
+      margin: 20px 0;
+    }
+
+    .scroll-text {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 40px;
+      transition: opacity 0.3s ease;
+    }
+
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    footer hr {
+      width: 10%;
+      border: 1px solid white;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <h1>
-        leo.e0in |
-        <a href="https://github.com/leo-e0in" target="_blank"> <i class="fab fa-github" style="font-size:30px; color: #fff;"></i></a>
-    </h1>
+
+  <div class="content">
+    <h2>
+      Hey, My Name is Leo :)
+    </h2>
+
+    <h3>
+      This will be my portfolio where I'll be showing some projects I'm proud of! This website is currently under development so please find below a link to my GitHub where you can see my projects and some of my work including the source code to this exact website!
+    </h3>
     
-    <hr>
-    <h2>Oh hey! I'm Leo :)</h2>
-    <p>I’m a person who believes in innovation and using technology as a tool to inspire and help others. Through the years, I’ve used my fascination with tech to fuel me to experiment and push my limits. I’ve learned to be curious and never back down from a challenge. This website shows some examples where curiosity didn't kill the cat (me), and I made things that I personally think are pretty cool.</p>
-    
-    <hr style="width: 80%;">
-    <h3> Projects </h3>
-    <p> I'm currently working on my A-Level Computer Science project, named ApexOS, A lightweight, modular OS simulation aimed at individuals looking to learn the basics of Linux and its commands and filesystem.</p>
-    <p> I've done a project named Project Blackcat. This project involved me using a raspberry pi to increase my privacy and security. I used <a href="https://pi-hole.net">Pi-hole</a> to block advertising by having a list of blocked URLS/Adresses, I used <a href="https://github.com/cloudflare/cloudflared"> cloudflared</a>, a cloudflare tunnel client to encrypt by traffic and prevent external parties accessing this data and mitigate the effects of possible deep packet inspection. To put it all together I used <a href="https://www.pivpn.io">PiVPN</a> to allow me to access all this remotely whereever i am.   </p>
+    <hr> 
+      
+    </style>
+    <div class="scroll-text" id="scrollText">
+      Scroll to see experience
+    </div>
+  </div>
+
+  <footer>
+    <p>
+       <a href="https://github.com/leo-e0in" target="_blank"> <i class="fab fa-github" style="font-size:30px; color: #fff;"></i></a>
+      </a>
+    </p>
+  </footer>
+
+  <script>
+    const scrollText = document.getElementById('scrollText');
+    const messages = [
+      "5 years of experience in Python",
+      "3 years of light experience in HTML, CSS, JS",
+      "Completed OCR GCSE Computer Science",
+      "In my 1st year of OCR A Level Computer Science"
+    ];
+
+    let currentIndex = 0;
+
+    window.addEventListener('wheel', (e) => {
+      const scrollAmount = e.deltaY;
+
+      if (scrollAmount > 0) {
+        currentIndex = (currentIndex + 1) % messages.length;
+      } else {
+        currentIndex = (currentIndex - 1 + messages.length) % messages.length;
+      }
+
+      scrollText.style.opacity = 0;
+
+      setTimeout(() => {
+        scrollText.textContent = messages[currentIndex];
+        scrollText.style.opacity = 1;
+      }, 300);
+    });
+  </script>
+
 </body>
 </html>
