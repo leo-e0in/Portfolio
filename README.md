@@ -1,0 +1,1 @@
+This is my personal website and portfolio, here i will display my projects, infomation about me and overall show what I've done and the skills I've developed
