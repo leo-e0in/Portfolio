@@ -52,3 +52,20 @@
      iframe {
         text-align: center  ;
      }
+
+
+     /* Hovers */
+a:hover {
+    transform: scale(1.1);
+}
+
+
+/* Links */
+a{
+    font-family: 'Trebuchet MS', 'Verdana', sans-serif;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    display: inline-block;           
+    transition: transform 0.2s ease;  
+    }
