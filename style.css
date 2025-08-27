@@ -1,0 +1,72 @@
+/* Basics */
+header {
+    font-family: 'Trebuchet MS', 'Verdana', sans-serif;
+    background-color: #1a1a1a; 
+    color: #fff;
+    text-align: center;
+    color: #fff; 
+    margin-top: auto;
+    padding: 0.1px 0
+    }   
+
+
+footer {
+    font-family: 'Trebuchet MS', 'Verdana', sans-serif;
+    background-color: #1a1a1a; 
+    color: #fff;
+    text-align: center;
+    color: #fff; 
+    margin-bottom: auto;
+    padding: 0.1px 0;
+}
+
+
+body {
+    font-family: 'Trebuchet MS', 'Verdana', sans-serif;
+    background-color: #1F1F1F; 
+    color: #fff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    }
+
+
+content {
+    font-family: 'Trebuchet MS', 'Verdana', sans-serif;
+    background-color: #1F1F1F; 
+    color: #fff;
+    text-align: center;
+    flex: 1;  
+        }
+
+
+/* Links */
+a{
+    font-family: 'Trebuchet MS', 'Verdana', sans-serif;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    display: inline-block;           
+    transition: transform 0.2s ease;  
+    }
+        
+ a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+        }
+
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+        }
+
+
+/* Hovers */
+a:hover {
+    transform: scale(1.1);
+}
