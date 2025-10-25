@@ -70,3 +70,20 @@ a:visited {
 a:hover {
     transform: scale(1.1);
 }
+
+.container {
+    
+  display: flex;       /* makes children line up in a row */
+  justify-content: space-between; /* spreads them evenly */
+  padding: 10px;
+  gap: 1px;
+}
+
+.box {
+    list-style-position: inside;
+    padding: 10px;
+    text-align: center;
+    flex: 1;             /* makes all boxes take equal width */
+    margin: 0 10px;  
+    }    /* spacing between boxes */z
+    
