@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
 <html>
-
     <head>
         <title> eoinix | home </title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="/assets/icons/icons8-terminal-16.png" type="image/png">
+        <script src="script.js"></script>
     </head>
 
  
@@ -24,14 +24,11 @@
 
 
         <main>
-
             <h2> I'm Eoin (aka Leo) and I'm a programmer and cybersecurity enthusiast! </h3>      
             <hr style="width: 80%;">
 
 
-
             <div class="container">
-                
                 <div class="box">
                     <h3>Python</h3>
                     <hr style="width: 20%;">
@@ -40,7 +37,7 @@
                 </div>
 
             <div class="box">
-                <h3>Bash>
+                <h3>Bash </h3>
                 <hr style="width: 20%;">
                 <li> Lower Intermediate</li>
                 <li>2 Years Experience</li>
@@ -54,12 +51,53 @@
                 <li> Beginner</li>
                 <li>3 Years light Experience</p>
             </div>
-        
         </div>
 
+        <br>
+        <br>
 
-       
-    
+
+        <thead>
+            <table id="projectTable">
+                <tr>
+                    <th col-index=1 > Project Name </th>
+
+                    <th col-index=2 > Language
+                         <select id="languageFilter">
+                        <option value="all"></option>
+                        <option value="python">Python</option>
+                        <option value="bash">Bash</option>
+                        <option value="yaml">YAML</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                    </th>
+                    <th col-index=3-> Github Link</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>ApexOS</td>
+                    <td>Python</td>
+                    <td>https://github.com/leo-e0in/ApexOS</td>
+
+                </tr>
+
+                <tr>
+                    <td>EPQ</td>
+                    <td>Bash, YAML</td>
+                    <td>NONE</td>
+                </tr>
+
+                <tr>
+                    <td>eoinix.net</td>
+                    <td>HTML, CSS, JavaScript</td>
+                    <td>https://github.com/leo-e0in/Portfolio</td>
+                </tr>
+                </tbody>
+            </table>
     </main>
 
 
