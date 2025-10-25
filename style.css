@@ -5,8 +5,8 @@ header {
     color: #fff;
     text-align: center;
     color: #fff; 
-    margin-top: auto;
     padding: 0.1px 0
+    
     }   
 
 
@@ -32,6 +32,17 @@ html, body {
     height: 100%;
     }
 
+h2 {
+    font-size: 23px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+h3 {
+    font-size: 22px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
 main {
     font-family: 'Trebuchet MS', 'Verdana', sans-serif;
@@ -84,7 +95,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     flex: 1;           
-    margin: 0 10px;  
+    margin: 10px;  
     }   
 
 
